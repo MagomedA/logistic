@@ -1,0 +1,185 @@
+body
+    font-family: 'PT Sans', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 15px
+    color: #585858
+
+.container
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0 15px
+
+h1,h2,h3,h4,h5,h6
+    margin: 0
+    padding: 0
+
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+    margin: 0
+    padding: 0
+
+input
+    margin: 0
+    padding: 0
+
+/* Variables */
+
+$blue-color: #004AF2
+$btn-color: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%)
+$lato: 'Lato', sans-serif
+
+/* Header */
+
+.header
+    position: fixed
+    width: 100%
+    top: 0
+    right: 0
+    left: 0
+    z-index: 1000
+    background-color: rgba(0, 0, 0, 0.2)
+    &__inner
+        height: 85px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+/* Navbar */
+.navbar
+    height: 100%
+    display: flex
+    &__link
+        display: flex
+        align-items: center
+        padding: 0 15px
+        color: #fff
+        font-size: 15px
+        line-height: 18px
+
+.navbar__link.active
+    background-color: $blue-color
+
+/* Intro */
+
+.intro
+    height: 630px
+    background-image: url('../img/logistic-intro.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    &__inner
+        height: 630px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__text
+        margin-bottom: 45px
+        text-align: right
+    &__count
+        font-size: 15px
+        line-height: 21px
+        color: #fff
+    &__title
+        position: relative
+        color: rgba(255, 255, 255, 0.8)
+        font-family: $lato
+        font-weight: 700
+        font-size: 110px
+        line-height: 100px
+        &-amp
+            position: absolute
+            font-size: 170px
+            color: rgba(255, 255, 255, 0.2)
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+
+/* Request form */
+
+.request__form
+    border-radius: 5px
+    overflow: hidden
+    width: 100%
+    max-width: 400px
+    background-color: $blue-color
+    &-header
+        background-color: #033FC9
+        padding: 20px 30px
+    &-title
+        font-weight: 900
+        font-size: 30px
+        line-height: 36px
+        color: #fff
+        font-family: $lato
+    &-text
+        padding-top: 10px
+        font-weight: 400
+        font-size: 15px
+        line-height: 19px
+        color: #fff
+    &-content
+        padding: 30px
+
+/* Form */
+
+.form
+    &__group
+        margin-bottom: 25px
+
+.request__form--intro
+    position: relative
+    bottom: -30px
+    
+.input
+    display: block
+    width: 85%
+    color: #fff
+    background-color: transparent
+    border: none
+    padding-bottom: 12px
+    padding-left: 47px
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+    transition: border-bottom .5s
+    &:focus
+        outline: none
+        border-bottom-color: #fff
+
+.input::placeholder
+    color: #fff
+
+.input--user
+    background-image: url('../img/logistic-user.svg')
+    background-repeat: no-repeat
+    background-position: 13px 1px
+
+.input--phone
+    background-image: url('../img/logistic-phone.svg')
+    background-repeat: no-repeat
+    background-position: 13px 1px
+
+.input--email
+    background-image: url('../img/logistic-email.svg')
+    background-repeat: no-repeat
+    background-position: 13px 4px
+
+/* Btn */
+
+.btn
+    background: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%)
+    border-radius: 5px
+    color: #fff
+    border: none
+    cursor: pointer
+    display: block
+    width: 100%
+    padding: 11px 0
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
