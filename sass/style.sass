@@ -15,6 +15,9 @@ h1,h2,h3,h4,h5,h6
     margin: 0
     padding: 0
 
+p
+    margin: 0
+
 ul
     list-style: none
     margin: 0
@@ -69,6 +72,7 @@ $lato: 'Lato', sans-serif
 /* Intro */
 
 .intro
+    margin-bottom: 30px
     height: 630px
     background-image: url('../img/logistic-intro.jpg')
     background-repeat: no-repeat
@@ -136,7 +140,7 @@ $lato: 'Lato', sans-serif
 .request__form--intro
     position: relative
     bottom: -30px
-    
+
 .input
     display: block
     width: 85%
@@ -183,3 +187,62 @@ $lato: 'Lato', sans-serif
     font-weight: bold
     font-size: 18px
     line-height: 23px
+
+/* Services */
+.services
+    padding: 60px 0
+    &__inner
+        position: relative
+        border-radius: 5px
+        padding: 28px 0 
+        display: flex
+        flex-wrap: wrap
+        background-color: #fff
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1)
+    &__main
+        &-title
+            position: absolute
+            font-weight: 900
+            right: 20px
+            bottom: 0
+            pointer-events: none
+            color: rgba(44, 44, 44, 0.05)
+            font-size: 90px
+            line-height: 90px
+            font-family: $lato
+    &__item
+        display: flex
+        flex-direction: column
+        width: 16%
+        margin: 0 50px
+        margin-bottom: 35px
+    &__footer
+        margin-top: auto
+    &__title
+        font-weight: 900
+        font-size: 24px
+        line-height: 29px
+        font-family: $lato
+    &__text
+        margin: 20px 0
+        font-size: 15px
+        color: #585858
+        line-height: 21px
+    &__link
+        display: inline-block
+        color: $blue-color
+        transition: all .5s
+        &::after
+            content: ''
+            display: block
+            width: 10px
+            height: 2px
+            margin-top: 10px
+            background-color: $blue-color
+            transition: all .5s
+        &:hover
+            color: #FF3E2F
+
+.services__link:hover:after
+    width: 100%
+    background-color: #FF3E2F
