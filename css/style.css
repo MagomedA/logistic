@@ -40,6 +40,17 @@ input {
 }
 
 /* Variables */
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 50px;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -356,6 +367,7 @@ input {
 
 .clients--btn {
   display: inline;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
   padding: 11px 45px;
 }
 
@@ -414,5 +426,195 @@ input {
 
 .reviews__content-text:first-child {
   text-indent: 20px;
+}
+
+/* Benefits */
+.benefits {
+  margin-top: 135px;
+  margin-bottom: 70px;
+}
+
+.benefits__inner {
+  display: flex;
+  align-items: center;
+}
+
+.benefits__col {
+  width: 50%;
+}
+
+.benefits__list {
+  position: relative;
+  padding-left: 52px;
+  background-image: linear-gradient(to bottom, #fff 65%, #A5A5A5 60%);
+  background-repeat: repeat-y;
+  background-size: 2px 48px;
+  background-position: left;
+  width: 100%;
+  max-width: 370px;
+}
+
+.benefits__list::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/pin-start.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 36px;
+  left: -11px;
+  top: -22px;
+}
+
+.benefits__list::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/pin-end.svg");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 36px;
+  left: -11px;
+  bottom: -10px;
+  background-color: #fff;
+}
+
+.benefits__list-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.benefits__list-title {
+  margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 21px;
+  line-height: 25px;
+  font-family: "Lato", sans-serif;
+  color: #2C2C2C;
+}
+
+.benefits__list-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+/* Team */
+.team {
+  padding: 60px 0;
+}
+
+.team--gray {
+  background-color: #F9F9F9;
+}
+
+.team__img {
+  box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16);
+}
+
+.team__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__inner-item {
+  margin-bottom: 30px;
+  padding-right: 30px;
+  width: 370px;
+}
+
+.team__inner-name {
+  margin-top: 13px;
+  color: #2C2C2C;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Lato", sans-serif;
+}
+
+.team__inner-info {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 19px;
+  color: #585858;
+}
+
+.team__inner-list {
+  margin-top: 13px;
+}
+
+.team__inner-list-item {
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.team__icon {
+  margin-right: 10px;
+  width: 16px;
+}
+
+/* Mission */
+.mission {
+  padding: 135px 0 120px 0;
+}
+
+.mission__inner {
+  position: relative;
+  text-align: center;
+  padding: 60px 35px;
+  background-color: #fff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+
+.mission__inner::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 2px;
+  background-color: #004AF2;
+  bottom: 0;
+  right: 50%;
+}
+
+.mission__inner::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 500px;
+  height: 2px;
+  background-color: #FC2C2B;
+  bottom: 0;
+  left: 50%;
+}
+
+.mission__inner-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Lato", sans-serif;
+  color: #004AF2;
+}
+
+.mission__inner-text {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+.mission-title {
+  position: absolute;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 108px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.05);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

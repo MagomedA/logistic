@@ -38,6 +38,15 @@ $blue-color: #004AF2
 $btn-color: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%)
 $lato: 'Lato', sans-serif
 
+.img
+    display: block
+    max-width: 100%
+    height: auto
+
+.text-center
+    text-align: center
+    margin-top: 50px
+
 /* Header */
 
 .header
@@ -288,6 +297,7 @@ $lato: 'Lato', sans-serif
             margin-bottom: 45px
     &--btn
         display: inline
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2)
         padding: 11px 45px
     &__btns
         margin-top: 20px
@@ -331,3 +341,147 @@ $lato: 'Lato', sans-serif
             font-family: $lato
             &:first-child
                 text-indent: 20px
+
+/* Benefits */
+
+.benefits
+    margin-top: 135px
+    margin-bottom: 70px
+    &__inner
+        display: flex
+        align-items: center
+    &__col
+        width: 50%
+    &__list
+        position: relative
+        padding-left: 52px
+        background-image: linear-gradient(to bottom, #fff 65%, #A5A5A5 60%)
+        background-repeat: repeat-y
+        background-size: 2px 48px
+        background-position: left
+        width: 100%
+        max-width: 370px
+        &::before
+            content: ''
+            position: absolute
+            background-image: url('../img/pin-start.svg')
+            background-repeat: no-repeat
+            width: 28px
+            height: 36px
+            left: -11px
+            top: -22px
+        &::after
+            content: ''
+            position: absolute
+            background-image: url('../img/pin-end.svg')
+            background-repeat: no-repeat
+            width: 28px
+            height: 36px
+            left: -11px
+            bottom: -10px
+            background-color: #fff
+        &-item:not(:last-child)
+            margin-bottom: 35px
+        &-title
+            margin-bottom: 12px
+            font-weight: 900
+            font-size: 21px
+            line-height: 25px
+            font-family: $lato
+            color: #2C2C2C
+        &-text
+            font-weight: 400
+            font-size: 15px
+            line-height: 21px
+
+/* Team */
+
+.team
+    padding: 60px 0
+    &--gray
+        background-color: #F9F9F9
+    &__img
+        box-shadow: 10px 5px 13px rgba(0, 0, 0, 0.16)
+    &__inner
+        display: flex
+        flex-wrap: wrap
+        &-item
+            margin-bottom: 30px
+            padding-right: 30px
+            width: 370px
+        &-name
+            margin-top: 13px
+            color: #2C2C2C
+            font-weight: 900
+            font-size: 18px
+            line-height: 22px
+            font-family: $lato
+        &-info
+            margin-top: 5px
+            font-size: 15px
+            line-height: 19px
+            color: #585858
+        &-list
+            margin-top: 13px
+            &-item
+                margin-bottom: 9px
+                font-weight: 400
+                font-size: 14px
+                line-height: 18px
+    &__icon
+        margin-right: 10px
+        width: 16px
+
+/* Mission */
+
+.mission
+    padding: 135px 0 120px 0
+    &__inner
+        position: relative
+        text-align: center
+        padding: 60px 35px
+        background-color: #fff
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16)
+        border-radius: 5px
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 500px
+            height: 2px
+            background-color: $blue-color
+            bottom: 0
+            right: 50%
+        &::after
+            content: ''
+            position: absolute
+            display: block
+            width: 500px
+            height: 2px
+            background-color: #FC2C2B
+            bottom: 0
+            left: 50%
+        &-title
+            font-weight: 700
+            font-size: 30px
+            line-height: 36px
+            font-family: $lato
+            color: $blue-color
+        &-text
+            font-weight: 400
+            font-size: 21px
+            line-height: 25px
+            font-family: $lato
+    &-title
+        position: absolute
+        font-style: normal
+        font-weight: 900
+        font-size: 90px
+        line-height: 108px
+        font-family: $lato
+        text-align: center
+        margin-top: -75px
+        left: 50%
+        transform: translateX(-50%)
+        color: rgba(0, 0, 0, 0.05)
+        text-transform: uppercase
