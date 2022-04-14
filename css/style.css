@@ -51,6 +51,19 @@ input {
   margin-top: 50px;
 }
 
+button {
+  transition: all .5s;
+}
+
+a {
+  transition: all .5s;
+}
+
+.btn--hover:hover {
+  background: linear-gradient(90deg, #e36f1c 0%, #e11414 100%);
+  transition: all .5s;
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -616,5 +629,105 @@ input {
   transform: translateX(-50%);
   color: rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
+}
+
+/* News */
+.news__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.news__inner-item {
+  margin-bottom: 35px;
+  width: 510px;
+}
+
+.news__inner-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2C2C2C;
+}
+
+.news__inner-title a {
+  color: inherit;
+}
+
+.news__inner-title a:hover {
+  text-decoration: underline;
+}
+
+.news__inner-text {
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.news__inner-date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.news__btn {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 11px 43px;
+  color: #fff;
+  background: linear-gradient(90deg, #FF903E 0%, #FF2C2C 100%);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background-image: url("../img/tire-left.png"), url("../img/tire-right.png");
+  background-repeat: no-repeat;
+  background-position: left bottom, right bottom;
+  margin-top: 120px;
+  background-color: #F9F9F9;
+  padding: 40px 0;
+}
+
+.footer__inner {
+  text-align: center;
+}
+
+.footer__inner-info {
+  margin-top: 25px;
+}
+
+.footer__inner-info p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #585858;
+}
+
+.footer__inner-info a {
+  color: #585858;
+}
+
+.footer__inner-info a:hover {
+  text-decoration: underline;
+}
+
+.footer__nav {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer__nav-link {
+  margin: 0 12px;
+  color: #004AF2;
 }
 /*# sourceMappingURL=style.css.map */
