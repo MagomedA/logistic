@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CenterLogistic</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a href="#!" class="logo">
+                <a href="index.html" class="logo">
                     <img src="./img/logistic-logo.svg" alt="logo">
                 </a>
                 <nav class="navbar">
@@ -32,6 +32,9 @@
                     <a href="#!" class="navbar__link">News</a>
                     <a href="#!" class="navbar__link">Contact Us</a>
                 </nav>
+                <button class="burger">
+                    <img src="./img/burger.svg" alt="burger">
+                </button>
             </div>
         </div>
     </header>
@@ -152,28 +155,28 @@
                 <div class="clients__logos">
                     <ul class="clients__list">
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/atica.png" alt="atica"></a>
+                                    src="./img/clients/atica.png" class="img" alt="atica"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/hex-lab 1.png" alt="hex-lab"></a>
+                                    src="./img/clients/hex-lab 1.png" class="img" alt="hex-lab"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/amara.png" alt="amara"></a>
+                                    src="./img/clients/amara.png" class="img" alt="amara"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/muzica-2.png" alt="muzica-2"></a>
+                                    src="./img/clients/muzica-2.png" class="img" alt="muzica-2"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/solaytic.png" alt="solaytic"></a>
+                                    src="./img/clients/solaytic.png" class="img" alt="solaytic"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/hexa.png" alt="hexa"></a>
+                                    src="./img/clients/hexa.png" class="img" alt="hexa"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/utosia-2.png" alt="utosia-2"></a>
+                                    src="./img/clients/utosia-2.png" class="img" alt="utosia-2"></a>
                         </li>
                         <li class="clients__list-item"><a href="#!" class="clients__list-link"><img
-                                    src="./img/clients/fox-hub.png" alt="fox-hub"></a>
+                                    src="./img/clients/fox-hub.png" class="img" alt="fox-hub"></a>
                         </li>
                     </ul>
                 </div>
@@ -379,32 +382,93 @@
                         21 March, 2019
                     </span>
                 </div>
-                <div class="news__inner-item">
-                    <h4 class="news__inner-title">
-                        <a href="#!">News title</a>
-                    </h4>
-                    <div class="news__inner-text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet.
-                    </div>
-                    <span class="news__inner-date">
-                        21 March, 2019
-                    </span>
-                </div>
+                
 
             </div>
-            <a href="#!" class="news__btn btn--hover">
+            <a href="blog.html" class="news__btn btn--hover">
                 Visit blog
             </a>
         </div>
     </section>
 
+    
+
+    <!-- Modal -->
+
+    <div class="modal" id="becomeClientModal" style="display: none;">
+        <div class="modal__inner">
+            <button class="modal__close">
+                <img src="./img/modal-close.svg" alt="modal-close">
+            </button>
+            <div class="modal__inner-header">
+                <h4 class="modal__inner-title">
+                    Need to deliver your cargo?
+                    We can help!
+                </h4>
+                <p class="modal__inner-text">
+                    Fill a little form and we will call you back!
+                </p>
+            </div>
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <input class="input input--user input--dark" type="text" placeholder="Your name">
+                </div>
+                <div class="form__group">
+                    <input class="input input--phone input--dark" type="tel" placeholder="Your phone">
+                </div>
+                <div class="form__group">
+                    <input class="input input--dark  input--email " type="email" placeholder="Your e-mail">
+                </div>
+                <button class="btn btn--hover" type="submit">Call me back</button>
+            </form>
+            <div class="modal__footer">
+                <h4 class="modal__footer-title">
+                    Our contacts
+                </h4>
+                <address class="modal__footer-address">
+                    <p>New York, Street, ZIP code</p>
+                    <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+                    <p>E-mail: <a href="mailto:">hello@centerlogistic.com</a></p>
+                </address>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="modal" id="thanksModal" style="display: none;">
+        <div class="modal__inner">
+            <button class="modal__close">
+                <img src="./img/modal-close.svg" alt="modal-close">
+            </button>
+            <div class="modal__inner-header">
+                <img src="./img/tick.svg" alt="tick">
+                <h4 class="modal__inner-title">
+                    Thanks for your request
+                </h4>
+                <p class="modal__inner-text">
+                    We call you back as soon as possible!
+                </p>
+            </div>
+            <div class="modal__footer">
+                <h4 class="modal__footer-title">
+                    Our contacts
+                </h4>
+                <address class="modal__footer-address">
+                    <p>New York, Street, ZIP code</p>
+                    <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+                    <p>E-mail: <a href="mailto:">hello@centerlogistic.com</a></p>
+                </address>
+            </div>
+        </div>
+        
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <img src="./img/logo-footer.svg" alt="logo-footer">
+                <a href="index.html">
+                    <img src="./img/logo-footer.svg" alt="logo-footer">
+                </a>
                 <div class="footer__inner-info">
                     <p>New York, Street, ZIP code</p>
                     <p>Call Us: <a href="tel:+9948373123">+9948373123</a> or E-mail: <a
