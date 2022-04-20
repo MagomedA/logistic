@@ -18,18 +18,18 @@
 
     <!-- Header -->
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <a href="index.html" class="logo">
                     <img src="./img/logistic-logo.svg" alt="logo">
                 </a>
                 <nav class="navbar">
-                    <a href="#!" class="navbar__link active">Services</a>
-                    <a href="#!" class="navbar__link">Clients</a>
-                    <a href="#!" class="navbar__link">Benefits</a>
-                    <a href="#!" class="navbar__link">Team</a>
-                    <a href="#!" class="navbar__link">News</a>
+                    <a href="#!" data-scroll="#services" class="navbar__link active">Services</a>
+                    <a href="#!" data-scroll="#clients" class="navbar__link">Clients</a>
+                    <a href="#!" data-scroll="#benefits" class="navbar__link">Benefits</a>
+                    <a href="#!" data-scroll="#team" class="navbar__link">Team</a>
+                    <a href="#!" data-scroll="#news" class="navbar__link">News</a>
                     <a href="#!" class="navbar__link">Contact Us</a>
                 </nav>
                 <button class="burger">
@@ -41,7 +41,7 @@
 
     <!-- Intro -->
 
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <div class="request__form request__form--intro">
@@ -82,7 +82,7 @@
 
     <!-- Services -->
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services__inner">
                 <h2 class="services__main-title">
@@ -148,7 +148,7 @@
 
     <!-- Clients -->
 
-    <section class="clients clients--map">
+    <section class="clients clients--map" id="clients">
         <div class="container">
             <h2 class="section__title"><span>Our</span> Clients</h2>
             <div class="clients__inner">
@@ -216,7 +216,7 @@
         </div>
     </section>
 
-    <div class="benefits">
+    <div class="benefits" id="benefits">
         <div class="container">
             <div class="benefits__inner">
                 <div class="benefits__col">
@@ -264,7 +264,7 @@
 
     <!-- Team -->
 
-    <section class="team team--gray">
+    <section class="team team--gray" id="team">
         <div class="container">
             <h2 class="section__title"><span>Our</span> Team </h2>
             <div class="team__inner">
@@ -329,7 +329,7 @@
 
     <!-- Mission -->
 
-    <section class="mission">
+    <section class="mission" id="mission">
         <div class="container">
             <h5 class="mission-title">
                 Our mission
@@ -350,7 +350,7 @@
 
     <!-- News -->
 
-    <section class="news">
+    <section class="news" id="news">
         <div class="container">
             <h2 class="section__title"><span>Interesting</span> to read</h2>
             <div class="news__inner">
@@ -489,7 +489,11 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <!-- JavaScript -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
